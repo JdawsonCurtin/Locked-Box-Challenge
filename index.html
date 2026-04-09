@@ -84,7 +84,7 @@
 <body>
 
 <h1>⏳ Challenge Time</h1>
-<div>
+<div id="setupSection">
   <label>Set Time (seconds) for all groups: </label>
   <input type="number" id="globalTime">
   <label>Set Passcode for all groups: </label>
@@ -219,9 +219,7 @@ function startAllTimers() {
     timers[i].start(globalTime, globalPass);
   }
 
-  document.getElementById('globalTime').style.display = 'none';
-  document.getElementById('globalPass').style.display = 'none';
-  event.target.style.display = 'none';
+  document.getElementById('setupSection').style.display = 'none';
 }
 </script>
 
